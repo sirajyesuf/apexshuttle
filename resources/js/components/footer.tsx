@@ -3,8 +3,8 @@ import { Car, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <div className="h-[40vh] bg-[#1b234c] flex flex-col text-white">
-            <div className="container mx-auto  p-4 h-[90%] grid grid-cols-2">
+        <div className="bg-[#1b234c] flex flex-col gap-8 text-white p-4">
+            <div className="container mx-auto  p-4 h-[90%] grid grid-cols-1 md:grid-cols-2">
                 <div className="w-50 h-50">
                     <Car size={60} />
                 </div>
@@ -35,10 +35,10 @@ export default function Footer() {
 
                 <div className="flex gap-4">
                     <a href="#" color="white">
-                        <Linkedin size={20} />
+                        <Linkedin size={30} />
                     </a>
                     <a href="#" color="white">
-                        <Instagram size={20} />
+                        <Instagram size={30} />
                     </a>
                 </div>
             </div>

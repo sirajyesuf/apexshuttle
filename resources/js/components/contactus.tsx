@@ -4,7 +4,7 @@ export default function ContactUs() {
         <section className="h-[70vh] md:h-[60vh] bg-white text-white grid grid-cols-1 md:grid-cols-2 shadow-sm rounded-lg  container mx-auto my-12 border-[1px] border-[#e9e9e9]">
             <div className="">
                 <div className="text-center text-5xl font-extrabold py-8 text-[#991b1b]">
-                    Contact Us
+                    CONTACT US
                 </div>
                 <div className="flex justify-center p-8">
                     <form className="w-full">

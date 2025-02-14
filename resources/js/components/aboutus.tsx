@@ -7,12 +7,12 @@ export default function AboutUs() {
                 className="w-full h-full object-cover"
             />
 
-            <div className="absolute top-0 left-0 bg-black bg-opacity-50 text-white p-4  w-[100%] md:max-w-[40%] flex flex-col gap-4 h-full">
+            <div className="absolute top-0 left-0 bg-black bg-opacity-50 text-white  w-[100%] md:max-w-[40%] flex flex-col gap-4 h-full p-12">
                 <h1 className="font-extrabold text-xl md:text-4xl border-b-8 border-red-900 self-start">
-                    About ApexShuttle
+                    ABOUT US
                 </h1>
 
-                <p className="text-md md:text-lg montserrat">
+                <p className="text-lg md:text-xl montserrat">
                     In 2008, USP Holdings expanded its corporate mission and
                     engaged in transportation services. Our transportation
                     mission is to provide safe, dependable, and efficient

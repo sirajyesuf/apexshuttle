@@ -114,9 +114,9 @@ export default function Fleets() {
 
     return (
         <div className="bg-gray-100 py-16 overflow-hidden" id="client_section">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center mb-8">
-                    Our fleeet
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
+                <h2 className="text-6xl font-bold text-center mb-12 border-b-8 border-red-900 self-center">
+                    OUR FLEETS
                 </h2>
                 <div
                     ref={containerRef}

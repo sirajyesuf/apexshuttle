@@ -1,19 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
+import { Car } from "lucide-react";
+
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <nav className="bg-white shadow-none relative z-50">
-            <div className="max-w-6xl mx-auto px-4 flex justify-between h-20 border-2 items-center">
-                <div className="border-2 border-green-500">
-                    <a href="/" className="flex items-center py-4 px-2">
-                    <p>LOGO</p>
-                    </a>
+            <div className="max-w-6xl mx-auto px-4 flex justify-between h-20  items-center">
+                <div className="">
+                     <Car size={60} />
                 </div>
-                <div className="flex justify-between border-2 border-green-500">
+                <div className="flex justify-between">
                     <div className="flex space-x-7">
                         <div className="hidden md:flex items-center space-x-1">
                             <a
