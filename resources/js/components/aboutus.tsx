@@ -3,6 +3,7 @@ export default function AboutUs() {
         <div
             className="relative w-full h-screen bg-cover bg-center"
             style={{ backgroundImage: "url('/images/aboutus-car.png')" }}
+            id="aboutus_section"
         >
             <div className="absolute inset-0 bg-black bg-opacity-50" />
             <div className="relative h-full flex items-start justify-start p-4 sm:p-6 md:p-8">
