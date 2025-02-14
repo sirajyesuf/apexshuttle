@@ -9,9 +9,9 @@ export default function Navbar() {
     return (
         <nav className="bg-white shadow-none relative z-50">
             <div className="max-w-6xl mx-auto px-4 flex justify-between h-20  items-center">
-                <div className="">
+                <a className="" href="/">
                     <Car size={60} />
-                </div>
+                </a>
                 <div className="flex justify-between">
                     <div className="flex space-x-7">
                         <div className="hidden md:flex items-center space-x-1">
