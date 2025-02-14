@@ -56,38 +56,22 @@ export default function Services() {
         {
             icon: Package,
             title: "vip",
-            description: "hey",
+            description: "We provide VIP services to our clients.",
         },
     ];
 
     return (
-        <section>
-            {/* <div className="relative max-w-full mx-auto h-full">
-                <div className="flex items-center h-full px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-2xl relative z-10">
-                        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
-                            {title}
-                        </h1>
-                        <p className="mt-4 text-xl text-blue-100 mb-8">
-                            {tdescription}
-                        </p>
-                    </div>
+        <section className="py-16 bg-white my-12" id="services_section">
+            <div className="container mx-auto px-4 flex flex-col gap-8">
+                <h2 className="text-2xl md:text-6xl font-bold text-center mb-12 border-b-8 border-red-900 self-center">
+                    OUR SERVICES
+                </h2>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    {securitySolutions.map((feature, index) => (
+                        <ServiceFeature key={index} {...feature} />
+                    ))}
                 </div>
-            </div> */}
-
-            {/* Service Features */}
-            <section className="py-16 bg-white my-20">
-                <div className="container mx-auto px-4 flex flex-col gap-8">
-                    <h2 className="text-6xl font-bold text-center mb-12 border-b-8 border-red-900 self-center">
-                        OUR SERVICES
-                    </h2>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {securitySolutions.map((feature, index) => (
-                            <ServiceFeature key={index} {...feature} />
-                        ))}
-                    </div>
-                </div>
-            </section>
+            </div>
         </section>
     );
 }

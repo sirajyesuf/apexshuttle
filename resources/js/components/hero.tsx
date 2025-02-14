@@ -15,10 +15,10 @@ export default function Hero() {
 
             {/* Content */}
             <div className="relative z-20 text-center text-white self-center">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4">
                     Explore the World
                 </h1>
-                <p className="text-md sm:text-xl md:text-2xl  mb-8">
+                <p className="text-md sm:text-xl md:text-2xl mb-8">
                     Discover breathtaking landscapes with us
                 </p>
                 <button className="bg-white text-gray-800 font-bold py-2 px-4 rounded-full hover:bg-gray-200 transition duration-300">

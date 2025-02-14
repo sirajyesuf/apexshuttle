@@ -113,15 +113,15 @@ export default function Fleets() {
     }, [isInView, controls]);
 
     return (
-        <div className="bg-gray-100 py-16 overflow-hidden" id="client_section">
+        <div className="bg-gray-100 py-16" id="fleets_section">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
-                <h2 className="text-6xl font-bold text-center mb-12 border-b-8 border-red-900 self-center">
+                <h2 className="text-xl md:text-6xl font-bold text-center mb-12 border-b-8 border-red-900 self-center">
                     OUR FLEETS
                 </h2>
                 <div
                     ref={containerRef}
                     className="relative overflow-hidden"
-                    style={{ height: "300px" }}
+                    style={{ height: "200px" }}
                 >
                     <motion.div
                         className="flex space-x-8 absolute h-[800px]"
@@ -147,7 +147,7 @@ export default function Fleets() {
                                 key={index}
                             >
                                 <div
-                                    className="flex-shrink-0 h-[200px] w-[600px]  rounded-none shadow-none flex items-center justify-center p-4  transition-shadow duration-300 ease-in-out"
+                                    className="flex-shrink-0 h-[100px] w-[300px]  rounded-none shadow-none flex items-center justify-center p-4  transition-shadow duration-300 ease-in-out"
                                     onMouseEnter={() => controls.stop()}
                                     onMouseLeave={() =>
                                         controls.start("visible")

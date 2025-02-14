@@ -3,13 +3,16 @@ import { Car, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <div className="bg-[#1b234c] flex flex-col gap-8 text-white p-4">
+        <section
+            className="bg-[#1b234c] flex flex-col gap-8 text-white p-4 shadow-none rounded-t-lg"
+            id="footer_section"
+        >
             <div className="container mx-auto  p-4 h-[90%] grid grid-cols-1 md:grid-cols-2">
                 <div className="w-50 h-50">
                     <Car size={60} />
                 </div>
 
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid  grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex flex-col gap-4">
                         <div className="text-xl font-bold">Company</div>
                         <p>Address</p>
@@ -31,11 +34,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className="container mx-auto border-yellow-900 flex flex-row justify-between items-center">
-                <div className="text-white font-bold font-lg flex flex-col md:flex-row gap-4">
-                    © 2025 ApexShuttle
-                    <span className="text-[#f83fe0]">
-                        Powered by Santa Trading PLC.
-                    </span>
+                <div className="text-white text-start">
+                    © 2025 ApexShuttle. All Rights Reserved.
                 </div>
 
                 <div className="flex gap-4">
@@ -47,6 +47,9 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
-        </div>
+            <div className="text-[#f83fe0] font-bold  text-center">
+                Powered by Santa Trading PLC.
+            </div>
+        </section>
     );
 }

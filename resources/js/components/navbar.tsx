@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { Car } from "lucide-react";
 
-
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,34 +10,35 @@ export default function Navbar() {
         <nav className="bg-white shadow-none relative z-50">
             <div className="max-w-6xl mx-auto px-4 flex justify-between h-20  items-center">
                 <div className="">
-                     <Car size={60} />
+                    <Car size={60} />
                 </div>
                 <div className="flex justify-between">
                     <div className="flex space-x-7">
                         <div className="hidden md:flex items-center space-x-1">
                             <a
-                                href="/"
+                                href="/#aboutus_section"
                                 className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
                             >
-                                Home
+                                Aboutus
                             </a>
                             <a
-                                href="/about"
-                                className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-                            >
-                                About
-                            </a>
-                            <a
-                                href="/services"
+                                href="/#services_section"
                                 className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
                             >
                                 Services
                             </a>
                             <a
-                                href="/contact"
+                                href="/#contactus_section"
                                 className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
                             >
-                                Contact
+                                Contactus
+                            </a>
+
+                            <a
+                                href="/#fleets_section"
+                                className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                            >
+                                OurFleet
                             </a>
                         </div>
                     </div>
@@ -68,28 +68,28 @@ export default function Navbar() {
             </div>
             <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
                 <a
-                    href="/"
-                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300"
+                    href="/#aboutus_section"
+                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300 capitalize"
                 >
-                    Home
+                    Aboutus
                 </a>
                 <a
-                    href="/about"
-                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300"
-                >
-                    About
-                </a>
-                <a
-                    href="/services"
-                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300"
+                    href="/#services_section"
+                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300 capitalize"
                 >
                     Services
                 </a>
                 <a
-                    href="/contact"
-                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300"
+                    href="/#fleets_section"
+                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300 capitalize"
                 >
-                    Contact
+                    our fleets
+                </a>
+                <a
+                    href="/#contactus_section"
+                    className="block py-2 px-4 text-sm hover:bg-green-500 hover:text-white transition duration-300 capitalize"
+                >
+                    Contactus
                 </a>
             </div>
         </nav>
