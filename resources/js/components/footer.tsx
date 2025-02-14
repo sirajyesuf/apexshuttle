@@ -31,7 +31,12 @@ export default function Footer() {
                 </div>
             </div>
             <div className="container mx-auto border-yellow-900 flex flex-row justify-between items-center">
-                <div>© 2025 ApexShuttle. All rights reserved.</div>
+                <div className="text-white font-bold font-lg flex flex-col md:flex-row gap-4">
+                    © 2025 ApexShuttle
+                    <span className="text-[#f83fe0]">
+                        Powered by Santa Trading PLC.
+                    </span>
+                </div>
 
                 <div className="flex gap-4">
                     <a href="#" color="white">
